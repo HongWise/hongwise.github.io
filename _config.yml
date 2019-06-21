@@ -1,1 +1,37 @@
-theme: jekyll-theme-time-machine
+########################################################################
+# DO NOT USE TABS
+########################################################################
+
+authors:     Hong Li
+description: Hong Personal Space
+title:       HongWise
+url: "https://hongwise.github.io"
+
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "doc"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "blog/:categories/:year/:month/:day/:title/"
+  -
+    scope:
+      path: "profile"
+      type: "pages"
+    values:
+      layout: "profile"
+
+# 
+docs_dir: /docs
+

@@ -1,0 +1,123 @@
+// ---------------------------------------------------------------------
+// Definitions of all variables providing fall-back values.
+// Overriding values must be put before this file.
+//
+// References:
+// - bootstrap | v4.3.1 | https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
+// ---------------------------------------------------------------------
+
+// ---------------------------- Commons --------------------------------
+
+// Colors
+$black:     #000000 !default;
+$white:     #ffffff !default;
+$blue:      #007bff !default;
+$indigo:    #6610f2 !default;
+$purple:    #6f42c1 !default;
+$pink:      #e83e8c !default;
+$red:       #dc3545 !default;
+$orange:    #fd7e14 !default;
+$yellow:    #ffc107 !default;
+$green:     #28a745 !default;
+$teal:      #20c997 !default;
+$cyan:      #17a2b8 !default;
+$gray-100:  #f8f9fa !default;
+$gray-200:  #e9ecef !default;
+$gray-300:  #dee2e6 !default;
+$gray-400:  #ced4da !default;
+$gray-500:  #adb5bd !default;
+$gray-600:  #6c757d !default;
+$gray-700:  #495057 !default;
+$gray-800:  #343a40 !default;
+$gray-900:  #212529 !default;
+$gray:      $gray-600 !default;
+$gray-dark: $gray-800 !default;
+
+// Fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+$font-size-base: 1REM !default;
+$font-size-lg:   $font-size-base * 1.25 !default;
+$font-size-sm:   $font-size-base * .875 !default;
+$font-weight-lighter: lighter !default;
+$font-weight-light:   300 !default;
+$font-weight-normal:  400 !default;
+$font-weight-bold:    700 !default;
+$font-weight-bolder:  bolder !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+// ------------------------- Normalization -----------------------------
+
+// Body
+$body-bg-color: $white    !default;
+$body-color:    $gray-900 !default;
+
+// Headings
+$headings-margin-top:    2REM  !default;
+$headings-margin-bottom: .5REM !default;
+$headings-font-family:   null !default;
+$headings-font-weight:   500  !default;
+$headings-line-height:   1.2  !default;
+$headings-color:         null !default;
+$h1-font-size:   $font-size-base * 2    !default;
+$h2-font-size:   $font-size-base * 1.75 !default;
+$h3-font-size:   $font-size-base * 1.5  !default;
+$h4-font-size:   $font-size-base * 1.25 !default;
+$h5-font-size:   $font-size-base        !default;
+$h6-font-size:   $font-size-base * 0.75 !default;
+
+// Paragraphs
+$paragraph-margin-top:    0    !default;
+$paragraph-margin-bottom: 1REM !default;
+
+// Links
+$link-color:            $blue !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Description List/Term/Details
+$dt-font-weight:   $font-weight-bold !default;
+$dd-margin-bottom: .5REM !default;
+$dd-margin-left:   0     !default;
+
+// Tables
+$table-cell-padding:  .75REM !default;
+$table-caption-color: $gray-600 !default;
+
+// Forms
+$label-margin-bottom: .5REM !default;
+
+// ----------------------------- Layout --------------------------------
+
+$dark-purple:        #563d7c !default;
+$dark-purple-bright: lighten(saturate($dark-purple, 5%), 15%) !default;
+$dark-purple-light:  lighten(saturate($dark-purple, 5%), 45%) !default;
+
+// Site Header
+$site-header-z-index: 1080 !default;
+
+$site-header-padding-y:  .5REM !default;
+$site-header-padding-x:  1REM  !default;
+$site-header-min-height: 4REM  !default;
+$site-header-bg-color:   $dark-purple  !default;
+
+$top-nav-link-padding:      .5rem              !default;
+$top-nav-link-color:        $dark-purple-light !default;
+$top-nav-link-active-color: $white             !default;
+
+// Site Body
+$site-main-padding: 1REM !default;
+
+// Site Body - Documentation
+$doc-navbar-z-index: 1070 !default;
+
+$nested-nav-item-padding: 1REM !default;
+
+$doc-nav-icon-padding-y: .25REM;
+$doc-nav-icon-width: 1REM;
+
+$doc-nav-link-color:        rgba(0, 0, 0, .65) !default;
+$doc-nav-link-active-color: rgba(0, 0, 0, .85) !default;

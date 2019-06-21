@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="{{ site.authors }}">
+		<meta name="description" content="{{ page.description | default: site.description | smartify }}">
+		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+		
+		<title>
+			{%- if page.title -%}
+			{{ page.title | smartify }} - {{ site.title | smartify }}
+			{%- else -%}
+			{{ site.title | smartify }} - {{ site.description | smartify }}
+			{%- endif -%}
+		</title>
+		
+		<!-- <link rel="manifest" href="asset/site.webmanifest"> -->
+		<!-- Place favicon.ico in the root directory -->
+		<!-- <link rel="apple-touch-icon" href="icon.png"> -->
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"> -->
+		<link rel="stylesheet" href="/assets/css/main.css">
+	</head>
+	
+	<body>
+		<!--[if IE]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+		{%- include header.html -%}
+		
+		<main class="site-main">
+		{{ content }}
+		</main>
+		
+		{%- include footer.html -%}
+		
+		<script src="/assets/js/main.js"></script>
+		<!-- Google Analytics -->
+	</body>
+</html>
+<!-- https://github.com/h5bp/html5-boilerplate/blob/v7.1.0/dist/doc/TOC.md -->

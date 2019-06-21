@@ -1,0 +1,21 @@
+---
+layout: default
+space:  doc
+---
+
+<div class="doc-container">
+	<nav class="navbar">
+	{%- include nav.html content=site.data.nav.doc.content -%}
+	</nav>
+	
+	<div class="page-content">
+		{%- if page.title -%}
+		<section class="page-header">
+			<p class="page-title" id="content">{{ page.title }}</p>
+			<p class="page-desc">{{ page.description | default: "No description" }}</p>
+		</section>
+		{%- endif -%}
+		
+		{{ content }}
+	</div>
+</div>

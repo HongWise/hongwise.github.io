@@ -1,0 +1,46 @@
+{%- assign parent = include.parent | default: site.docs_dir -%}
+{%- assign items  = include.content -%}
+{%- assign page_path_size = page.dir.size | minus: 1 -%}
+{%- assign page_path      = page.dir | slice: 0, page_path_size -%}
+{%- assign hidden_class   = include.hidden_class -%}
+<ul class="navbar-nav {{hidden_class}}">
+{%- for item in items-%}
+	{%- if item.path -%}
+		{%- assign item_url = parent | append: '/' | append: item.path -%}
+	{%- else -%}
+		{%- assign item_url = parent -%}
+	{%- endif -%}
+	
+	{%- assign page_start = page_path | slice: 0, item_url.size -%}
+	{%- if item_url == site.docs_dir and item_url == page_path -%}
+		{%- assign active_class = 'active' -%}
+	{%- elsif item_url != site.docs_dir and item_url == page_start -%}
+		{%- assign active_class = 'active' -%}
+	{%- else -%}
+		{%- assign active_class = nil -%}
+	{%- endif -%}
+	
+	{%- if item.children.size > 0 and active_class -%}
+		{%- assign nav_icon_status = 'nav-icon-expand' -%}
+	{%- elsif item.children.size > 0 -%}
+		{%- assign nav_icon_status = 'nav-icon-collapse' -%}
+	{%- else -%}
+		{%- assign nav_icon_status = nil -%}
+	{%- endif -%}
+	
+	{%- if active_class -%}
+		{%- assign hidden_class = nil -%}
+	{%- else -%}
+		{%- assign hidden_class = 'hidden' -%}
+	{%- endif -%}
+	
+	<li class="nav-item">
+		<span class="nav-icon {{nav_icon_status}}"></span>
+		<a class="nav-link {{active_class}}" href="{{item_url}}/">{{item.label}}</a>	
+	{%- if item.children.size > 0 -%}
+		{%- include nav.html content=item.children parent=item_url hidden_class=hidden_class -%}
+	{%- endif -%}
+	</li>
+{%- endfor -%}
+</ul>
+{%- assign parent = parent | split: '/' | pop | join: '/' -%}

@@ -1,0 +1,36 @@
+# https://github.com/Animosity/CraftIRC/wiki/Complete-pathiot's-introduction-to-yaml
+content:
+- label: Home
+  
+- label: Web
+  path: web
+  children: 
+  - label: HTML
+    path: html
+    children:
+    - label: HTML5
+      path: html5
+  - label: CSS
+    path: css
+
+- label: Database
+  path: database
+  children:
+  - label: Oracle
+    path: oracle
+    children: 
+    - label: Architecture
+      path: architecture
+      children:
+      - label: Instance
+        path: instance
+
+- label: XML
+  path: xml
+  children:
+  - label: DTD
+    path: DTD
+  - label: XSD
+    path: xsd
+  - label: XPath
+    path: xpath
