@@ -15,8 +15,8 @@ exclude:
 defaults:
   -
     scope:
-      path: "docs"
       type: "pages"
+      path: "docs"
     values:
       layout: "doc"
   -
@@ -27,8 +27,8 @@ defaults:
       permalink: "blog/:categories/:year/:month/:day/:title/"
   -
     scope:
-      path: "profile"
       type: "pages"
+      path: "profile"
     values:
       layout: "profile"
 
