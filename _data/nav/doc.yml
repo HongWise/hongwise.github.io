@@ -1,4 +1,11 @@
-# https://github.com/Animosity/CraftIRC/wiki/Complete-pathiot's-introduction-to-yaml
+########################################################################
+#                NAVIGATION STRUCTURE FOR DOCUMENTATION
+# The 'path' element is REQUIRED except the root
+# The 'path' element denotes a leaf and appends with .html if no 'children' specified
+#
+# https://github.com/Animosity/CraftIRC/wiki/Complete-idiot's-introduction-to-yaml
+########################################################################
+
 content:
 - label: Home
   
@@ -12,6 +19,8 @@ content:
       path: html5
   - label: CSS
     path: css
+  - label: JavaScript
+    path: js
 
 - label: Database
   path: database

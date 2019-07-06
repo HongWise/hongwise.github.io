@@ -36,9 +36,11 @@
 	
 	<li class="nav-item">
 		<span class="nav-icon {{nav_icon_status}}"></span>
-		<a class="nav-link {{active_class}}" href="{{item_url}}/">{{item.label}}</a>	
 	{%- if item.children.size > 0 -%}
+		<a class="nav-link {{active_class}}" href="{{item_url}}/">{{item.label}}</a>
 		{%- include nav.html content=item.children parent=item_url hidden_class=hidden_class -%}
+	{%- else -%}
+		<a class="nav-link {{active_class}}" href="{{item_url}}.html">{{item.label}}</a>
 	{%- endif -%}
 	</li>
 {%- endfor -%}
