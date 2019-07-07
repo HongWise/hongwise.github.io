@@ -1,17 +1,22 @@
 
 # References:
-https://itnext.io/advanced-use-of-sass-maps-bd5a47ca0d1a
+* [Jekyll Official Documentation](https://jekyllrb.com/docs/)
+* [Kramdown Quick Reference](https://kramdown.gettalong.org/quickref.html)
+* [Advanced Use of SASS Maps](https://itnext.io/advanced-use-of-sass-maps-bd5a47ca0d1a)
 
 # TODO
-* Research syntax highlighting (https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html)
-* BLOG Layout and styles
-* 404 Page style
-* Consider using nav.html to generate top navigation bar
-* Finish convention on documentation home page
-* Add footer
-* Investigate stylelint
-* Expand/collapse Documentation navbar
-
+* Improvement - styles for common HTML elements
+* Improvement - styles for code highlighting (https://bnhr.xyz/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html)
+* Improvement - BLOG Layout and styles
+* Investigation - generate documentation nav structure dynamically
+* Implementation - expand/collapse Documentation navbar
+* Implementation - site footer
+* Investigation - build pipeline (testing/verification, stylelint)
+* Implementation - convention on documentation home page
+* Investigation - search (the whole site and within documentation)
+* Investigation - favicon
+* Improvement - styles for other medias (responsive design)
+* Improvement - README.md
 
 # CSS Properties Order
 1. Position properties

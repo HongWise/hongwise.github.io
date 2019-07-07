@@ -15,8 +15,7 @@ exclude:
 defaults:
   -
     scope:
-      type: "pages"
-      path: "docs"
+      type: "docs"
     values:
       layout: "doc"
   -
@@ -34,4 +33,6 @@ defaults:
 
 # 
 docs_dir: /docs
-
+collections:
+  docs:
+    output: true

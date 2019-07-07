@@ -1,4 +1,7 @@
-const VERSION = "0.0.1";
+---
+permalink: /sw.js
+---
+
 const CACHE_APP_NAME = 'hongwise-app';
 const CACHE_APP = [
 	'/assets/css/main.css',
