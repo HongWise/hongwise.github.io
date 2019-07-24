@@ -28,7 +28,7 @@
 	
 	<li class="nav-item">
 		<span class="nav-icon {{icon_class}}"></span>
-		<a class="nav-link {% if active %}active{% endif %}" href="{{item_url}}">{{item.label}}</a>
+		<a class="nav-link {% if active %}active{% endif %}" href="{{item_url}}">{{item.name}}</a>
 	{%- if item.children.size > 0 -%}
 		{%- include nav.html content=item.children parent=item_url show=active -%}
 	{%- endif -%}

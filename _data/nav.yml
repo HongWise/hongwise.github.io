@@ -3,43 +3,43 @@
 # The 'path' element is REQUIRED except the root
 # The 'path' element denotes a leaf and appends with .html if no 'children' specified
 #
+# https://yaml.org/spec/1.2/spec.html
 # https://github.com/Animosity/CraftIRC/wiki/Complete-idiot's-introduction-to-yaml
 ########################################################################
 
 content:
-- label: Home
-  
-- label: Web
-  path: web
-  children: 
-  - label: HTML
-    path: html
+  - name: Home
+# WEB
+  - name: 'Web'
+    path: 'web'
     children:
-    - label: HTML5
-      path: html5
-  - label: CSS
-    path: css
-  - label: JavaScript
-    path: js
-
-- label: Database
-  path: database
-  children:
-  - label: Oracle
-    path: oracle
-    children: 
-    - label: Architecture
-      path: architecture
-      children:
-      - label: Instance
-        path: instance
-
-- label: XML
-  path: xml
-  children:
-  - label: DTD
-    path: DTD
-  - label: XSD
-    path: xsd
-  - label: XPath
-    path: xpath
+      - name: 'HTML'
+        path: 'html'
+        children:
+          - {name: 'HTML5', path: 'html5'}
+      - name: 'CSS'
+        path: 'css'
+      - name: 'JavaScript'
+        path: 'js'
+# Database
+  - name: 'Database'
+    path: 'database'
+    children:
+      - name: 'SQL'
+        path: 'sql'
+      - name: 'Oracle'
+        path: 'oracle'
+        children:
+          - {name: 'PL/SQL', path: 'plsql'}
+          - {name: 'Performance', path: 'perf'}
+      - name: 'SQLServer'
+        path: 'sqlserver'
+        children:
+          - {name: 'T-SQL', path: 'tsql'}
+# XML
+  - name: 'XML'
+    path: 'xml'
+    children:
+      - {name: 'DTD',   path: 'dtd'}
+      - {name: 'XSD',   path: 'xsd'}
+      - {name: 'XPath', path: 'xpath'}
