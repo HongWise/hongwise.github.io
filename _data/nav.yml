@@ -36,10 +36,16 @@ content:
         path: 'sqlserver'
         children:
           - {name: 'T-SQL', path: 'tsql'}
-# XML
-  - name: 'XML'
-    path: 'xml'
+# Tools
+  - name: 'Tools'
+    path: 'tools'
     children:
-      - {name: 'DTD',   path: 'dtd'}
-      - {name: 'XSD',   path: 'xsd'}
-      - {name: 'XPath', path: 'xpath'}
+      - {name: 'Eclipse', path: 'eclipse'}
+      - {name: 'Git',     path: 'git'}
+# XML
+# - name: 'XML'
+#   path: 'xml'
+#   children:
+#     - {name: 'DTD',   path: 'dtd'}
+#     - {name: 'XSD',   path: 'xsd'}
+#     - {name: 'XPath', path: 'xpath'}
