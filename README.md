@@ -1,3 +1,13 @@
+# Github Page Not Found
+## Check Jekyll Build Error Message
+https://help.github.com/en/articles/viewing-jekyll-build-error-messages
+
+## Trigger Rebuild
+https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages
+~~~
+git commit --allow-empty -m "Trigger rebuild"
+git push
+~~~
 
 # References:
 * [Jekyll Official Documentation](https://jekyllrb.com/docs/)
@@ -21,6 +31,7 @@
 * Improvement - styles for other medias (responsive design)
 * Improvement - README.md
 * Investigation - the auto-generated style.css in assets/css
+* Improvement - Minify JavaScript file
 
 # CSS Properties Order
 1. Position properties

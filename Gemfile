@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 gem 'github-pages', group: :jekyll_plugins
 
+# https://nvd.nist.gov/vuln/detail/CVE-2019-5477
+gem "nokogiri", ">= 1.10.4"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

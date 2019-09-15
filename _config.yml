@@ -34,3 +34,6 @@ defaults:
 
 # 
 docs_dir: /docs
+
+sass:
+  style: compressed

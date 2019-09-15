@@ -93,3 +93,7 @@ ALTER SYSTEM KILL SESSION 'session_id,serial#'; -- replace session_id and serial
 ~~~
 
 what is the process flow after taking a query?
+
+RAC
+http://what-when-how.com/Tutorial/topic-996ljkisj/Expert-Oracle-RAC-Performance-Diagnostics-and-Tuning-608.html
+http://oracle-help.com/oracle-rac/miscellaneous-oracle-rac-wait-events/
